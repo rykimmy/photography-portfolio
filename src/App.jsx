@@ -1,33 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from './components/NavBar'
+import './styles.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <NavBar />
+
+        <body>
+          <img className="coverphoto" src="watersplash.jpg" />
+          <div className="centeredTitle">Welcome.</div>
+          <div className="centeredDescription">Hello, my name is Ryan, and I am a photographer.<br></br>I hope you enjoy my work!</div>
+        </body>
+
+        <footer>
+          <a className="contact" href="mailto:rysjkim@gmail.com"><img className="contactimg" src="./email.png" /></a>
+          <a className="contact" target="_blank" href="https://www.linkedin.com/in/ryan-kim-b013b81bb"><img className="contactimg" src="linkedin.png" /></a>
+        </footer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
