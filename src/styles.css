@@ -12,7 +12,7 @@ header {
 }
 
 #title {
-    margin-left: 2vw;
+    margin-left: 3.5vw;
     font-weight: 100;
     
     /* color: #113662; */
@@ -26,7 +26,6 @@ nav {
 
 .navbar {
     font-size: 1.2em;
-    font-weight: 100;
 
     display: flex;
 
@@ -39,7 +38,16 @@ nav {
 
     color: black;
 
-    /* transition: all .3s ease-in-out; */
+    transition: all .3s ease-in-out;
+}
+
+.navbar:hover {
+    transform: scale(1.1);
+}
+
+.navlink {
+    font-weight: 100;
+    color: black;
 }
 
 body {
@@ -64,7 +72,7 @@ body {
 
     font-size: 5em;
 
-    font-weight: 150;
+    font-weight: 500;
 }
 
 .centeredDescription {
@@ -77,6 +85,75 @@ body {
     text-align: center;
 
     font-size: 1.3em;
+}
+
+/* ------------------------------------------- */
+/* ----------- PHOTOGRAPHY SECTION ----------- */
+/* ------------------------------------------- */
+
+/* CONTAINER FOR ALL FOUR PHOTOS */
+.sectionContainer {
+    display: grid;
+    
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 5vw;
+    row-gap: 5vh;
+
+    width: 90vw;
+
+    align-items: center;
+
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* EACH ITEM/PHOTO */
+.sectionItem {
+    /* max-width: 55vw;
+    max-height: 55vh; */
+
+    width: 100%;
+    height: 100%;
+
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+
+.itemContainer {
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.itemContainer:hover {
+    opacity: 1.0;
+
+    /* color: transparent; */
+    transform: scale(1.01);
+}
+
+.centeredSectionTitle {
+    color: white;
+    font-family: orpheus-pro;
+
+    opacity: 1.0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+
+    font-weight: 300;
+
+    position: absolute;
 }
 
 /* ------------------------------------------- */
