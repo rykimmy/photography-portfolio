@@ -7,8 +7,8 @@ function Photography() {
             <div className="sectionContainer">
                 {/* PEOPLE */}
                 <div className="itemContainer">
-                    <a href={<People />}><img className="sectionItem" src="people.jpg" /></a>
-                    {/* <Link to="/photography/people"><img className="sectionItem" src="people.jpg"/></Link> */}
+                    {/* <a href={<People />}><img className="sectionItem" src="people.jpg" /></a> */}
+                    <Link to="/photography/people"><img className="sectionItem" src="people.jpg" /></Link>
                     <div className="centeredSectionTitle">People</div>
                 </div>
 

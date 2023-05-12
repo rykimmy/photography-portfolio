@@ -22,17 +22,17 @@ const router = createBrowserRouter([
       {
         path: "/photography",
         element: <Photography />,
-        // children: [
-        //   {
-        //     path: "/photography/people",
-        //     element: <People />,
-        //   },
-        // ],
+        children: [
+          {
+            path: "/photography/people",
+            element: <People />,
+          },
+        ],
       },
-      {
-        path: "/people",
-        element: <People />,
-      },
+      // {
+      //   path: "/people",
+      //   element: <People />,
+      // },
     ],
   },
 ]);

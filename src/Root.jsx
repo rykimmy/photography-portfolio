@@ -27,4 +27,4 @@ export default function Root() {
       </div>
     </TaskContext.Provider>
   );
-}
+};
