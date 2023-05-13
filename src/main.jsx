@@ -4,6 +4,9 @@ import App from './App.jsx'
 import Root from './Root.jsx';
 import Photography from './components/Photography.jsx';
 import People from './components/People.jsx';
+import Nature from './components/Nature.jsx';
+import Sports from './components/Sports.jsx';
+import Film from './components/Film.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,19 +23,25 @@ const router = createBrowserRouter([
         element: <App />
       },
       {
-        path: "/photography",
+        path: "photography",
         element: <Photography />,
-        children: [
-          {
-            path: "/photography/people",
-            element: <People />,
-          },
-        ],
       },
-      // {
-      //   path: "/people",
-      //   element: <People />,
-      // },
+      {
+        path: "people",
+        element: <People />,
+      },
+      {
+        path: "nature",
+        element: <Nature />
+      },
+      {
+        path: "sports",
+        element: <Sports />,
+      },
+      {
+        path: "film",
+        element: <Film />,
+      },
     ],
   },
 ]);

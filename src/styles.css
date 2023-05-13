@@ -24,7 +24,7 @@ nav {
     justify-content: right;
 }
 
-.navbar {
+.navBar {
     font-size: 1.2em;
 
     display: flex;
@@ -41,21 +41,16 @@ nav {
     transition: all .3s ease-in-out;
 }
 
-.navbar:hover {
+.navBar:hover {
     transform: scale(1.1);
 }
 
-.navlink {
+.navLink {
     font-weight: 100;
     color: black;
 }
 
-body {
-    /* background-color: lightblue; */
-    /* font-family: orpheus-pro; */
-}
-
-.coverphoto {
+.coverPhoto {
     width: 100vw;
     height: 85vh;
     object-fit: cover;
@@ -88,7 +83,7 @@ body {
 }
 
 /* ------------------------------------------- */
-/* ----------- PHOTOGRAPHY SECTION ----------- */
+/* -------- PHOTOGRAPHY MENU SECTION --------- */
 /* ------------------------------------------- */
 
 /* CONTAINER FOR ALL FOUR PHOTOS */
@@ -138,9 +133,9 @@ body {
     transform: scale(1.01);
 }
 
-.centeredSectionTitle {
+.centeredSectionMenuTitle {
     color: white;
-    font-family: orpheus-pro;
+    /* font-family: orpheus-pro; */
 
     opacity: 1.0;
 
@@ -151,9 +146,58 @@ body {
 
     font-size: 3em;
 
-    font-weight: 300;
+    font-weight: 200;
 
     position: absolute;
+}
+
+/* ------------------------------------------- */
+/* ---------- PHOTOGRAPHY SECTIONS ----------- */
+/* ------------------------------------------- */
+
+.centeredSectionTitle {
+    color: white;
+    /* font-family: orpheus-pro; */
+
+    opacity: 1.0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+
+    font-weight: 200;
+
+    position: absolute;
+}
+
+.centeredSectionDescription {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: 150;
+}
+
+.photoGallery {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100vw;
+    object-fit: cover;
+
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
 }
 
 /* ------------------------------------------- */
@@ -172,7 +216,7 @@ footer {
     text-align: center;
 }
 
-.contactimg {
+.contactImg {
     display: inline;
     margin-left: auto;
     margin-right: auto;

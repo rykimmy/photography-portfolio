@@ -1,5 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
 import { createContext, useState } from 'react';
+import email from './img/icons/email.png';
+import instagram from './img/icons/instagram.png';
+import linkedin from './img/icons/linkedin.png';
 
 export const TaskContext = createContext();
 
@@ -12,17 +15,17 @@ export default function Root() {
         <header>
           <h1 id="title">Ryan Kim</h1>
           <nav>
-            <p className="navbar"><Link className="navlink" to="/">Home</Link></p>
-            <p className="navbar"><Link className="navlink" to="/photography">Photography</Link></p>
+            <p className="navBar"><Link className="navLink" to="/">Home</Link></p>
+            <p className="navBar"><Link className="navLink" to="/photography">Photography</Link></p>
           </nav>
         </header>
         <main>
           <Outlet />
         </main>
         <footer>
-          <a className="contact" href="mailto:rysjkim@gmail.com"><img className="contactimg" src="./email.png" /></a>
-          <a className="contact" target="_blank" href="https://www.instagram.com/kimmmy_photography/"><img className="contactimg" src="instagram.png" /></a>
-          <a className="contact" target="_blank" href="https://www.linkedin.com/in/ryan-kim-b013b81bb"><img className="contactimg" src="linkedin.png" /></a>
+          <a className="contact" href="mailto:rysjkim@gmail.com"><img className="contactImg" src={email} /></a>
+          <a className="contact" target="_blank" href="https://www.instagram.com/kimmmy_photography/"><img className="contactImg" src={instagram} /></a>
+          <a className="contact" target="_blank" href="https://www.linkedin.com/in/ryan-kim-b013b81bb"><img className="contactImg" src={linkedin} /></a>
         </footer>
       </div>
     </TaskContext.Provider>

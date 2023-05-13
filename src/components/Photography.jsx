@@ -1,5 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
-import People from './People';
+import people from '../img/people/people.jpg';
+import nature from '../img/nature/watersplash.jpg';
+import sports from '../img/sports/heading.jpg';
+import film from '../img/film/film.jpg';
 
 function Photography() {
     return (
@@ -7,27 +10,26 @@ function Photography() {
             <div className="sectionContainer">
                 {/* PEOPLE */}
                 <div className="itemContainer">
-                    {/* <a href={<People />}><img className="sectionItem" src="people.jpg" /></a> */}
-                    <Link to="/photography/people"><img className="sectionItem" src="people.jpg" /></Link>
-                    <div className="centeredSectionTitle">People</div>
+                    <Link to="/people"><img className="sectionItem" src={people} /></Link>
+                    <div className="centeredSectionMenuTitle">People</div>
                 </div>
 
                 {/* NATURE */}
                 <div className="itemContainer">
-                    <a><img className="sectionItem" src="watersplash.jpg" /></a>
-                    <div className="centeredSectionTitle">Nature</div>
+                    <Link to="/nature"><img className="sectionItem" src={nature} /></Link>
+                    <div className="centeredSectionMenuTitle">Nature</div>
                 </div>
 
                 {/* SPORTS */}
                 <div className="itemContainer">
-                    <a><img className="sectionItem" src="heading.jpg" /></a>
-                    <div className="centeredSectionTitle">Sports</div>
+                    <Link to="/sports"><img className="sectionItem" src={sports} /></Link>
+                    <div className="centeredSectionMenuTitle">Sports</div>
                 </div>
 
                 {/* FILM */}
                 <div className="itemContainer">
-                    <a><img className="sectionItem" src="film.jpg" /></a>
-                    <div className="centeredSectionTitle">Film</div>
+                    <Link to="/film"><img className="sectionItem" src={film} /></Link>
+                    <div className="centeredSectionMenuTitle">Film</div>
                 </div>
             </div>
         </div>
