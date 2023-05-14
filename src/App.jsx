@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './styles.css';
-import sunset from './img/nature/thesunset.jpg';
+import sunset from './img/nature/sunset.jpg';
 
 function App() {
 

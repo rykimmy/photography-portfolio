@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import people from '../img/people/people.jpg';
-import nature from '../img/nature/watersplash.jpg';
-import sports from '../img/sports/heading.jpg';
+import nature from '../img/nature/nature.jpg';
+import sports from '../img/sports/sports.jpg';
 import film from '../img/film/film.jpg';
 
 function Photography() {

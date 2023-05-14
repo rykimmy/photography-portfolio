@@ -1,4 +1,4 @@
-import PhotoAlbum from "react-photo-album";
+import PhotoAlbum from 'react-photo-album';
 import film from '../img/film/film.jpg';
 import film1 from '../img/film/film1.jpg';
 import film2 from '../img/film/film2.jpg';
