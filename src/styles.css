@@ -61,19 +61,19 @@ nav {
 .centeredTitle {
     color: white;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     font-size: 5em;
 
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .centeredDescription {
     color: white;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -194,11 +194,53 @@ nav {
     object-fit: cover;
 
     margin-top: 7vh;
-    margin-bottom: 14vh;
+    margin-bottom: 7vh;
     margin-left: auto;
     margin-right: auto;
 
     position: relative;
+}
+
+/* ------------------------------------------- */
+/* -------------- NEXT SECTIONS -------------- */
+/* ------------------------------------------- */
+
+.nextPageBoth {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7vh;
+}
+
+.nextPageRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+    margin-bottom: 7vh;
+}
+
+.nextPageLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    margin-bottom: 7vh;
+}
+
+.nextIcon {
+    font-size: 3.0em;
+    font-weight: 100;
+    margin-right: 3vw;
+    margin-left: 3vw;
+
+    color: black;
+
+    transition: all .3s ease-in-out; 
+}
+
+.nextIcon:hover {
+    transform: scale(1.1);
 }
 
 /* ------------------------------------------- */
@@ -228,7 +270,7 @@ footer {
     transition: all .3s ease-in-out; 
 }
 
-.contactimg:hover {
+.contactImg:hover {
     transform: scale(1.1);
 }
 

@@ -1,7 +1,7 @@
-import people from '../img/people/people.jpg';
-import nature from '../img/nature/nature.jpg';
-import sports from '../img/sports/sports.jpg';
-import film from '../img/film/film.jpg';
+import people from '../img/people.jpg';
+import nature from '../img/nature.jpg';
+import sports from '../img/sports.jpg';
+import film from '../img/film.jpg';
 
 const PhotographyItems = [
     {

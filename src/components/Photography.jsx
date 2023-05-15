@@ -1,9 +1,5 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PhotographyItems from './PhotographyItems';
-import people from '../img/people/people.jpg';
-import nature from '../img/nature/nature.jpg';
-import sports from '../img/sports/sports.jpg';
-import film from '../img/film/film.jpg';
 
 const Photography = () => {
     return (
