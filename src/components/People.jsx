@@ -20,6 +20,8 @@ import gabbi from '../img/people/gabbi.jpg';
 import glovsky from '../img/people/glovsky.jpg';
 import golf from '../img/people/golf.jpg';
 import golfcourse from '../img/people/golfcourse.jpg';
+import gradcane2 from '../img/people/gradcane2.jpg';
+import gradhug from '../img/people/gradhug.jpg';
 import grad2 from '../img/people/grad2.jpg';
 import grad3 from '../img/people/grad3.jpg';
 import grandparents from '../img/people/grandparents.jpg';
@@ -73,8 +75,8 @@ function People() {
         { src: glovsky, width: 3451, height: 3451 },
         { src: golf, width: 4032, height: 3024 },
         { src: golfcourse, width: 3024, height: 3024 },
-        { src: grad2, width: 1170, height: 2080 },
-        { src: grad3, width: 1170, height: 2080 },
+        { src: gradhug, width: 3024, height: 3024 },
+        { src: gradcane2, width: 3024, height: 3024 },
         { src: grandparents, width: 2883, height: 2883 },
         { src: hikingboys, width: 4932, height: 3456 },
         { src: katboat, width: 3024, height: 3024 },
@@ -111,7 +113,7 @@ function People() {
             <div className="centeredSectionDescription">A collection of images capturing people I know and don't know.</div>
 
             <div className="photoGallery">
-                <PhotoAlbum breakpoints={[200]} layout="masonry" photos={photos} />
+                <PhotoAlbum breakpoints={[300]} layout="masonry" photos={photos} />
             </div>
         </div>
     );

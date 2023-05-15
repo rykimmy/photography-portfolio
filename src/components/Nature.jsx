@@ -68,7 +68,7 @@ function Nature() {
             <div className="centeredSectionDescription">A collection of nature scenery and cool places.</div>
 
             <div className="photoGallery">
-                <PhotoAlbum breakpoints={[200]} layout="masonry" photos={photos} />
+                <PhotoAlbum breakpoints={[300]} layout="masonry" photos={photos} />
             </div>
         </div>
     );

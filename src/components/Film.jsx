@@ -38,7 +38,7 @@ function Film() {
             <div className="centeredSectionDescription">A collection of images taken with 35mm film.</div>
 
             <div className="photoGallery">
-                <PhotoAlbum breakpoints={[200]} layout="masonry" photos={photos} />
+                <PhotoAlbum breakpoints={[300]} layout="masonry" photos={photos} />
             </div>
         </div>
     );
