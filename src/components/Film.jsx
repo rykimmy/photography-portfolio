@@ -35,13 +35,14 @@ function Film() {
     ];
 
     const imageListRef = ref(storage, 'film/');
-    const [imageList, setImageList] = useState([]); // keeps track of all image urls
+    const [imageList, setImageList] = useState({}); // keeps track of all image urls
 
     useEffect(() => {
         listAll(imageListRef).then((response) => {
             response.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
-                    setImageList((prev) => [...prev, url]);
+                    // setImageList((prev) => [...prev, url]);
+                    setImageList((prev) => [...prev, { src: url, width: 1080, height: 720 }]);
                 });
             });
             console.log(reponse);
@@ -62,7 +63,7 @@ function Film() {
 
             <div className="photoGallery">
                 <PhotoAlbum breakpoints={[300]} layout="masonry" photos={imageList.map((url) => {
-                    
+                    return <img src={url} />;
                 })} />
             </div>
         </div>
