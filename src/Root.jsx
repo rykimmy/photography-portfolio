@@ -3,7 +3,6 @@ import { createContext, useState } from 'react';
 import email from './img/icons/email.png';
 import instagram from './img/icons/instagram.png';
 import linkedin from './img/icons/linkedin.png';
-import "animate.css/animate.min.css";
 
 export const TaskContext = createContext();
 

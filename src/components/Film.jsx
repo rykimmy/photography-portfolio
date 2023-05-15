@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import PhotoAlbum from 'react-photo-album';
 import film from '../img/film/film.jpg';
 import film1 from '../img/film/film1.jpg';
@@ -13,6 +14,8 @@ import film10 from '../img/film/film10.jpg';
 import film11 from '../img/film/film11.jpg';
 import film12 from '../img/film/film12.jpg';
 import film13 from '../img/film/film13.jpg';
+import { storage } from '../services/datastore.js';
+import { ref, listAll, getDownloadURL } from 'firebase/storage';
 
 function Film() {
     const photos = [
@@ -31,14 +34,36 @@ function Film() {
         { src: film13, width: 1357, height: 1002 },
     ];
 
+    const imageListRef = ref(storage, 'film/');
+    const [imageList, setImageList] = useState([]); // keeps track of all image urls
+
+    useEffect(() => {
+        listAll(imageListRef).then((response) => {
+            response.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setImageList((prev) => [...prev, url]);
+                });
+            });
+            console.log(reponse);
+        });
+    }, []);
+
     return (
         <div>
             <img className="coverPhoto" src={film} />
             <div className="centeredSectionTitle">The Film Photos</div>
             <div className="centeredSectionDescription">A collection of images taken with 35mm film.</div>
 
+            {/* FIREBASE */}
+            {/* {imageList.map((url) => {
+                return <img src={url} />;
+            })} */}
+
+
             <div className="photoGallery">
-                <PhotoAlbum breakpoints={[300]} layout="masonry" photos={photos} />
+                <PhotoAlbum breakpoints={[300]} layout="masonry" photos={imageList.map((url) => {
+                    
+                })} />
             </div>
         </div>
     );
