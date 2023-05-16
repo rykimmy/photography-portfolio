@@ -1,6 +1,7 @@
 # photography-portfolio
 
 GitHub username: rykimmy
+Deployed Link: https://ryankim-photography.netlify.app/people
 
 ## Description
 
