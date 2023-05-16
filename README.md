@@ -8,6 +8,10 @@ This project is a photography portfolio. As a aspiring software developer as wel
 
 To run the code locally, `cd` into the directory and run `npm run dev`.
 
+### Demo Video
+
+https://drive.google.com/file/d/1unslkqG2Q-Vh79UGjFyGmIc8j4ZfHdRv/view?usp=sharing
+
 ### Extra Comments
 
 I came into this project with no background experience other than the DALI Frontend Mini-Series.
