@@ -10,4 +10,4 @@ To run the code locally, `cd` into the directory and run `npm run dev`.
 
 ### Extra Comments
 
-This is one of three projects that I used to learn React. Additionally, this is the first time using Firebase.
+I came into this project with no background experience other than the DALI Frontend Mini-Series.
